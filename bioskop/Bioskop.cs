@@ -33,5 +33,17 @@ namespace bioskop
             dgTabela.ReadOnly = true;
             dgTabela.AllowUserToAddRows = false;
         }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            string film = tbFilm.Text.ToLower();
+            string vreme = tbVreme.Text.ToLower();
+            string naredba = $"select * from pogled where lower(film) like '%{film}%' and lower(vreme) like '%{vreme}%';";
+            adapter = new SqlDataAdapter(naredba, veza);
+            podaci.Clear();
+            podaci = new DataTable();
+            adapter.Fill(podaci);
+            dgTabela.DataSource = podaci;
+        }
     }
 }

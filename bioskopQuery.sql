@@ -52,7 +52,7 @@ values
 ('17:00:00', '19:00:00', 3, 'Sala pundravci'),
 ('18:00:00', '21:00:00', 2, 'Sala psihomodopop'),
 ('19:00:00', '21:00:00', 4, 'Sala pundravci'),
-('19:00:00', '21:00:00', 4, 'Sala pundravci'),
+('21:00:00', '23:00:00', 3, 'Sala pundravci'),
 ('21:00:00', '00:00:00', 1, 'Sala psihomodopop'),
 ('23:00:00', '01:00:00', 4, 'Sala pundravci')
 

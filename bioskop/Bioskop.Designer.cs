@@ -33,7 +33,7 @@
             this.bioskop2DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bioskop2DataSet = new bioskop.Bioskop2DataSet();
             this.tbFilm = new System.Windows.Forms.TextBox();
-            this.tbZanr = new System.Windows.Forms.TextBox();
+            this.tbVreme = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgTabela)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bioskop2DataSetBindingSource)).BeginInit();
@@ -50,7 +50,7 @@
             this.dgTabela.ReadOnly = true;
             this.dgTabela.RowHeadersWidth = 102;
             this.dgTabela.RowTemplate.Height = 40;
-            this.dgTabela.Size = new System.Drawing.Size(1281, 981);
+            this.dgTabela.Size = new System.Drawing.Size(1173, 981);
             this.dgTabela.TabIndex = 0;
             // 
             // bioskop2DataSetBindingSource
@@ -65,17 +65,17 @@
             // 
             // tbFilm
             // 
-            this.tbFilm.Location = new System.Drawing.Point(421, 88);
+            this.tbFilm.Location = new System.Drawing.Point(290, 98);
             this.tbFilm.Name = "tbFilm";
-            this.tbFilm.Size = new System.Drawing.Size(195, 38);
+            this.tbFilm.Size = new System.Drawing.Size(243, 38);
             this.tbFilm.TabIndex = 1;
             // 
-            // tbZanr
+            // tbVreme
             // 
-            this.tbZanr.Location = new System.Drawing.Point(781, 88);
-            this.tbZanr.Name = "tbZanr";
-            this.tbZanr.Size = new System.Drawing.Size(195, 38);
-            this.tbZanr.TabIndex = 2;
+            this.tbVreme.Location = new System.Drawing.Point(799, 98);
+            this.tbVreme.Name = "tbVreme";
+            this.tbVreme.Size = new System.Drawing.Size(231, 38);
+            this.tbVreme.TabIndex = 2;
             // 
             // btnSearch
             // 
@@ -85,14 +85,15 @@
             this.btnSearch.TabIndex = 3;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // Bioskop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2109, 1323);
+            this.ClientSize = new System.Drawing.Size(1627, 1473);
             this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.tbZanr);
+            this.Controls.Add(this.tbVreme);
             this.Controls.Add(this.tbFilm);
             this.Controls.Add(this.dgTabela);
             this.Name = "Bioskop";
@@ -112,7 +113,7 @@
         private System.Windows.Forms.BindingSource bioskop2DataSetBindingSource;
         private Bioskop2DataSet bioskop2DataSet;
         private System.Windows.Forms.TextBox tbFilm;
-        private System.Windows.Forms.TextBox tbZanr;
+        private System.Windows.Forms.TextBox tbVreme;
         private System.Windows.Forms.Button btnSearch;
     }
 }
