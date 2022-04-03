@@ -48,7 +48,8 @@ namespace bioskop
 
         private void btnOpis_Click(object sender, EventArgs e)
         {
-
+            Opis formaOpis = new Opis();
+            formaOpis.Show();
         }
     }
 }
