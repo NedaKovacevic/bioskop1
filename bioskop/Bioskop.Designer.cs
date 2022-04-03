@@ -35,6 +35,7 @@
             this.tbFilm = new System.Windows.Forms.TextBox();
             this.tbVreme = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
+            this.btnOpis = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgTabela)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bioskop2DataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bioskop2DataSet)).BeginInit();
@@ -87,11 +88,22 @@
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
+            // btnOpis
+            // 
+            this.btnOpis.Location = new System.Drawing.Point(1352, 1224);
+            this.btnOpis.Name = "btnOpis";
+            this.btnOpis.Size = new System.Drawing.Size(190, 56);
+            this.btnOpis.TabIndex = 4;
+            this.btnOpis.Text = "saznaj vise!";
+            this.btnOpis.UseVisualStyleBackColor = true;
+            this.btnOpis.Click += new System.EventHandler(this.btnOpis_Click);
+            // 
             // Bioskop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1627, 1473);
+            this.Controls.Add(this.btnOpis);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.tbVreme);
             this.Controls.Add(this.tbFilm);
@@ -115,6 +127,7 @@
         private System.Windows.Forms.TextBox tbFilm;
         private System.Windows.Forms.TextBox tbVreme;
         private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.Button btnOpis;
     }
 }
 

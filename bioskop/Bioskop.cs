@@ -45,5 +45,10 @@ namespace bioskop
             adapter.Fill(podaci);
             dgTabela.DataSource = podaci;
         }
+
+        private void btnOpis_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

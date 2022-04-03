@@ -57,10 +57,19 @@
     <Compile Include="Bioskop.Designer.cs">
       <DependentUpon>Bioskop.cs</DependentUpon>
     </Compile>
+    <Compile Include="Opis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Opis.Designer.cs">
+      <DependentUpon>Opis.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Bioskop.resx">
       <DependentUpon>Bioskop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Opis.resx">
+      <DependentUpon>Opis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
